@@ -1,0 +1,67 @@
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0px 0px 30px #444;
+}
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark);
+}
+body {
+    background-color: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+.heading {
+     background-color: var(--light);
+     height: 4rem;
+     width: 50%;
+     border-radius: 10px;
+ }
+.portal-heading {
+    padding-left: 1em;
+}
+.links ul {
+    margin-left: 1em;
+}
+
+.heading h1 {
+    margin-left: 4rem;
+    justify-content: center;
+    align-items: center;
+ }
+ .image {
+    position: absolute;
+    top: 0;
+    left: 440px;
+    margin-top: 50px;
+    box-shadow: var(--shadow);
+
+ }
+
+ img {
+     margin-left: 1rem;
+ }
+footer {
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+     background-color: var(--light);
+     border-radius: 4px;
+     width: 50%;
+ }
+footer p {
+    padding-top: 10px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+     
+ }
+.end-paragraph {
+    padding-bottom: 2rem;
+    margin-left: 4rem;
+    color: rgb(68, 82, 112); 
+    font-size: small;
+}
