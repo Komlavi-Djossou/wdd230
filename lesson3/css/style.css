@@ -1,0 +1,117 @@
+:root {
+    --primary: #2A4665;
+    --dark: #685460;
+    --secondary: #FEFCF7;
+    --light-yellow: #FEEAC3;
+}
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+    font-family: 'Lora', serif;;
+    color: var(--dark);
+}
+body {
+    background-color: var(--primary);
+    margin: 30px 50px;
+    line-height: 1.4;
+    border: 1px var(--secondary);
+}
+h1, h2, p {
+    color: var(--secondary);
+    margin: 10px 5px;
+}
+img {
+    max-width: 80%;
+}
+header {
+   text-align: center; 
+}
+header img {
+    width: 50%;
+    /* height: 200px; */
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 10px var(--light-yellow);
+}
+nav {
+    border-radius: 10px;
+    background-color: var(--light-yellow);
+    font-family: Lora;
+}
+
+nav ul {
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+   
+}
+nav li {
+    padding: 10px 20px;
+    font-weight: bold;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+    
+}
+
+nav ul li:hover{
+    background-color: var(--secondary);
+    transition: 0.9s;
+    color: var(--blue);
+    border-radius: 10px;
+}
+
+main {
+    padding: 1rem;
+    margin: 1rem;
+}
+main img {
+    width: 150px;
+    height: 100px;
+}
+.box {
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+
+}
+.typo {
+    color: var(--white);
+    padding: 10px 20px;
+    background-color: var(--dark);
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--dark);
+}
+footer {
+    padding-top: 2rem;
+    border-radius: 10px;
+    height: 80px;
+    text-align: center;
+    background-color: var(--light-yellow);
+}
+footer p {
+    color: var(--dark);
+}
+
+@media only screen and (min-width: 37.5em) {
+	nav ul { 
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(194px, 1fr));
+    }
+    header img{
+        width: 200px;
+    }
+}
+
