@@ -24,16 +24,22 @@ h1, h2, p {
     margin: 10px 5px;
 }
 img {
-    max-width: 80%;
+    max-width: 100%;
 }
 header {
+    font-family: 'Lora', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
    text-align: center; 
 }
 header img {
-    width: 50%;
-    border-radius: 10px;
-    box-sizing: border-box;
-    box-shadow: 0 10px 10px var(--light-yellow);
+    width: 80px;
+    padding: 10px 10px;
+}
+section h1 {
+    font-size: Bold;
 }
 nav {
     border-radius: 10px;
@@ -44,23 +50,23 @@ nav {
 nav ul {
     align-items: center;
     justify-content: center;
-    list-style: none;
+    list-style-type: none;
     margin-top: 1rem;
    
 }
-nav li {
-    padding: 10px 20px;
-    font-weight: bold;
-    
+nav ul li:first-child {
+    display: block;
 }
+
+
 nav ul li a {
+    display: block;
     text-decoration: none;
     padding: 0.8rem;
     text-align: center;
     color: var(--dark);
     font-size: 1.1rem;
     box-shadow: var(--shadow);
-    
 }
 
 nav ul li:hover{
@@ -70,28 +76,43 @@ nav ul li:hover{
     border-radius: 10px;
 }
 
-main {
-    padding: 1rem;
-    margin: 1rem;
+.active {
+	pointer-events: none;
 }
-main img {
-    width: 150px;
-    height: 100px;
-}
-.box {
-    display: flex;
-    padding: 1em;
-    justify-content: center;
-
-}
-.typo {
-    color: var(--white);
-    padding: 10px 20px;
+.menu {
+    color: var(--secondary);
+    background-color: var(--primary);
+}    
+.menu:hover{
+    color: var(--secondary);
     background-color: var(--dark);
-    margin: 10px;
-    border-radius: 10px;
-    border: 1px solid var(--dark);
 }
+.open::after{
+    content: " Menu";
+}
+.close::after{
+    content: " Close";
+}
+.responsive li {
+	display: block;
+}
+main{
+    display: block;
+    margin-bottom: 2rem;
+}
+main h2 {
+    text-align: center;
+    align-items: center;
+}
+.content-box{
+    padding: 1rem 1rem;
+    border: 1px solid red;
+    background-color: #FEFCF7;
+    margin-top: 10px;
+}
+
+
+
 footer {
     padding-top: 2rem;
     border-radius: 10px;
@@ -102,15 +123,3 @@ footer {
 footer p {
     color: var(--dark);
 }
-
-@media only screen and (min-width: 37.5em) {
-	nav ul { 
-        
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(194px, 1fr));
-    }
-    header img{
-        width: 200px;
-    }
-}
-

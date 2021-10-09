@@ -1,0 +1,8 @@
+@media screen and (min-width: 900px){
+    header img {
+        width: 200px;
+    }
+    nav ul {
+        max-width: 960px;
+    }
+}
