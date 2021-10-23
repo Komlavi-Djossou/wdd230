@@ -19,5 +19,21 @@
 	.herodiv {
 		width: 100%;
 	}
+	.forecast {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-gap: 10px;
+	}
+	.article {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+	}
+	.information {
+		display: grid;
+    	grid-template-columns: 1fr 1fr;
+		width: 97%;
+		padding-left: 2rem;
+	}
    
 }
