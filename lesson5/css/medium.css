@@ -12,8 +12,8 @@
 	nav ul li:first-child {
 		display: none;
 	}
-	main{
-		padding-left: 5rem;
+	main {
+		padding: 10px 10px;
         max-width: 80%;
     }
 	.herodiv {
@@ -24,11 +24,28 @@
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 		grid-gap: 10px;
 	}
-	.article {
-	display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-	}
+	article{
+        border: 1px solid #f58634;
+    }
+
+    .article section img{
+        float: right;
+        max-width: 55%;
+        margin-top: 5px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        
+    }
+    .article section h4{
+        font-size: 1.3rem;
+        margin: 0px 0px 10px 0px;
+    }
+    
+    .article section p{
+        
+        font-size: 1.05rem;
+        
+    }
 	.information {
 		display: grid;
     	grid-template-columns: 1fr 1fr;

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/weather logo.png" alt="site logo">
+        <section>
+            <h1>Check Weather</h1>
+            <p>No move without checking the weather!<p>
+        </section>
+    </header>
+        <nav>
+            <ul class="nonResponsive">
+                <li><a class="menu" href="#" onclick="openClose()"><span class="open">&#9776;</span></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a class="active" href="preston-6.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    <main class="clearfix">
+        <h2>Preston</h2>
+        <div class="herodiv">
+            <picture>
+                <source media="(max-width: 390px)" srcset="images/hero390.jpg">
+                <source media="(max-width: 500px)" srcset="images/hero_500.jpg">
+                <source media="(min-width: 900px)" srcset="images/hero_800.jpg ">
+                <img src="images/hero_800.jpg" alt="Preston Hero Image">
+            </picture>
+            <section class="weathersummary">
+                <h3>Weather Wummary</h3>
+                <p>Currently: Rainy</p>
+                <p>High: 76°F</p>
+                <p>Wind Chill: °F</p>
+                <p>Humidity: 84%</p>
+                <p>Wind Speed: 15mgh</p>
+            </section>
+        </div>
+
+        <h2 class="title">5 Day forecast</h2>
+        <div class="forecast">
+            <div class="box">
+            <h4>Wed</h4>
+            <img src="images/pic1.png" alt="forecast image">
+            <p>76&deg; F</p>
+            <p>Humidity: 89%</p>
+        </div>
+        <div class="box">
+            <h4>Thu</h4>
+            <img src="images/pic2.png" alt="forecast image">
+            <p>79&deg; F</p>
+            <p>Humidity: 36%</p>
+        </div>
+        <div class="box">
+            <h4>Fri</h4>
+            <img src="images/pic3.png" alt="forecast image">
+            <p>84&deg; F</p>
+            <p>Humidity: 23%</p>
+        </div>
+        <div class="box">
+            <h4>Sat</h4>
+            <img src="images/pic3.png" alt="forecast image">
+            <p>85&deg; F</p>
+            <p>Humidity: 42%</p>
+        </div>
+        <div class="box">
+            <h4>Sun</h4>
+            <img src="images/pic2.png" alt="forecast image">
+            <p>89&deg; F</p>
+            <p>Humidity: 91%</p>
+            </div>
+    </div>
+        <div class="article">
+            <section class="clearfix">
+            <img src="images/artpic.jpg" alt="preston article image">  
+            <P class="note">By Komlavi Djossou, TG,</p><br>
+            <p> Notification! <br> Important reminder: Tomorrow is the independant day of the country. This is to inform the population that tomorrow the weather is predicting a rain all day. 
+                The memorial celebration organized by the President of the country will take place rain or shine. So because of this potential inclement of
+                the waether overnight into tomorrow, we are closely monitoring conditions and will have an update on the celebration preparations by
+                this afternoon. Please make sure to visit our website and expect an annoucement from us. Thank you!
+            </p>
+        </section>  
+        </div>   
+    </main>
+    <footer>
+        <div class="information">
+            <div class="mapicon">
+            <img src="images/map.png" alt="#">
+            </div>
+            <div class="contact">
+                <h2>Contact Information</h2> 
+                <p>&#10082; Preston, ID 83263</p>
+                <p>&#9742; 909 909 909</p>
+                <p>&#9993; checkweather.net</p>
+                <img src="images/fcbk.jpeg" height="50px"alt="#">
+                <img src="images/pintrest.jpeg" height="50px" alt="#">
+                <img src="images/twitter.jpeg" height="50px" alt="#">
+                <img src="images/whatsapp.jpeg" height="50px" alt="#">
+            </div>
+        </div>
+        <div class="footer">
+        <p>&copy; 2021 | Komlavi W. A. Djossou | Togo | <a href="#">BYU Online Learning</a></p>
+        <p class="end-paragraph">Last Updated: <span id="currentdate"></span></p>
+     </div>
+    </footer>
+    <script src="js/preston.js"></script>
+    </footer>
+    
+</body>
+</html>

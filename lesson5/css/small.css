@@ -10,7 +10,7 @@
 }
 html{
     box-sizing: border-box;
-    font-family: 'Lora', serif;;
+    font-family: 'Lora', serif;
     color: var(--dark);
 }
 body {
@@ -82,10 +82,10 @@ nav ul li:hover{
 }
 
 /* menu */
-
+ 
 .active {
 	pointer-events: none;
-}
+} 
 .menu {
     color: var(--secondary);
     background-color: var(--primary);
@@ -103,9 +103,11 @@ nav ul li:hover{
 .responsive li {
 	display: block;
 }
+
 main{
     display: block;
     margin-bottom: 2rem;
+    background-color: #FEFCF7;
 }
 main h2 {
     text-align: center;
@@ -113,21 +115,10 @@ main h2 {
     color: white;
 }
 
-/* hero image and weather summary */
 .herodiv {
+    text-align: center;
     position: relative;
     margin: 10px auto;
-    width: 960px;
-    height: 300px;
-}
-
-.hero-ph {
-    margin: 10px auto; 
-    width: 100%;
-    height: 250px;
-}
-.hero-ph img {
-    height: 100%;
 }
 
 .weathersummary {
@@ -142,8 +133,6 @@ main h2 {
 /* 5 day forecast */
 .forecast {
     display: block;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 10px; */
 }
 .title {
     color: var(--secondary);
@@ -160,19 +149,31 @@ main h2 {
 }
 
 /* article */
-.article {
-    display: block;
-    /* grid-template-columns: 1fr 1fr;
-    grid-gap: 10px; */
-    margin: 10px auto;
-    background-color: white;
-    border: 10px solid var(--light-yellow);
-    border-radius: 10x;
+.article{
+    margin: 20px 0px;
 }
-.article p, img {
-    padding-left: 1rem;
+.article section{
+    padding: 20px;
+    text-align: center;
+    
 }
-
+.article section img{
+    margin: 0 auto;
+    box-shadow: 0px 0px 3px 1px #444;
+}
+.article section h4{
+    text-align: left;
+    margin: 10px 0px;
+}
+.article section p{
+    text-align: left;
+    font-size: 1rem;
+    margin: 5px 0px;
+}
+.note{
+    font-size: 1rem;
+    font-style: italic;    
+}
 
 /* map and contact */
 
@@ -181,7 +182,7 @@ main h2 {
     text-align: center;
     width: 360px;
     background-color: #FEFCF7;
-    border: 1px solid red;
+    border: 1px solid yellow;
 }
 
 .information h2{
@@ -205,4 +206,9 @@ main h2 {
 }
 .footer p {
     color: var(--dark);
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }

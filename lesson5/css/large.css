@@ -5,7 +5,15 @@
     nav ul {
         max-width: 960px;
     }
+    main {
+        margin: 0 auto;
+
+    }
     .herodiv {
         width: 100%;
+        margin: 0 auto;
+    }
+    .weathersummary {
+        margin-left: 2rem;
     }
 }
