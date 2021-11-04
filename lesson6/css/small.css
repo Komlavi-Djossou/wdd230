@@ -45,7 +45,7 @@ section h1 {
 }
 nav {
     border-radius: 10px;
-    background-color: var(--light-yellow);
+    background-color: whitesmoke;
     font-family: Lora;
 }
 
@@ -125,7 +125,8 @@ main h2 {
     position: absolute;
     top: 20px;
     left: 20px;
-    background: radial-gradient(yellow, white);
+    color: white;
+    background:  #00000099;
     border: 1px solid blue;
     padding: .5rem;
 }
@@ -202,7 +203,7 @@ main h2 {
     border-radius: 10px;
     height: 80px;
     text-align: center;
-    background-color: var(--light-yellow);
+    background-color: white;
 }
 .footer p {
     color: var(--dark);

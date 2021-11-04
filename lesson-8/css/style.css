@@ -1,0 +1,78 @@
+:root {
+    --first: #e7f0ed;
+    --second: #e7ffed;
+    --third: #628ca6;
+    --fourth: #7fb9c2; 
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: Ubuntu, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.4;
+    margin: 10px 10px;
+    padding: 0;
+}
+main {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid var(--third);
+	box-shadow: 0 0 10px black;
+	border-collapse: collapse;
+    width: 50%;
+}
+
+tr:first-child th {
+	background-color: black;
+	color: white;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid black;
+}
+
+
+th {
+	background-color: var(--third);
+    color: white;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--second);
+}
+tfoot td{
+    background-color: #7fb9c2;
+}
+.row-light {
+    background-color: #e7f0ed;
+}
+.row-light-1 {
+    background-color: #e7f0ed;
+    font-style: italic;
+}
+.col-3  td:nth-child(3) {
+    background-color: #628ca6;
+    color: white;
+}
+#heading {
+    background-color: #7fb9c2;
+    color: black;
+    font-weight: bold;
+}
