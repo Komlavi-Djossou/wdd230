@@ -3,12 +3,12 @@
         width: 200px;
     }
     nav ul {
-        max-width: 960px;
+        max-width: 100%;
     }
 
     main {
         margin: 0 auto;
-        background-color: rgb(34, 187, 238);
+        background-color: #22bbee;
 
     }
     .herodiv {
@@ -48,6 +48,20 @@
     .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gallery img {
+        padding: 2px 2px;
+        background-color: aliceblue;
+        border-radius: 10px;
+    }
+    .picture {
+        padding: 2px 2px;
+        background-color: aliceblue;
+        border-radius: 10px;
+        border: 1px solid var(--light-yellow);
+    }
+    .gallery img:hover {
+        box-shadow: 0 0 50px #333;
     }
 
 }

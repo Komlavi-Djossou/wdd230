@@ -180,7 +180,7 @@ main h2 {
 .information {
     display: inline-block;
     text-align: center;
-    width: 360px;
+    width: 100%;
     background-color: #FEFCF7;
     border: 1px solid yellow;
 }
@@ -218,5 +218,15 @@ main h2 {
     display: block;
 }
 .gallery-heading {
+    text-align: center;
+}
+
+@media (orientation:portrait){
+    figcaption {
+       display: none; /* visibility: none; */
+    }
+    
+}
+figcaption {
     text-align: center;
 }
