@@ -181,7 +181,7 @@ main h2 {
 .information {
     display: inline-block;
     text-align: center;
-    width: 360px;
+    width: 100%;
     background-color: #FEFCF7;
     border: 1px solid yellow;
 }

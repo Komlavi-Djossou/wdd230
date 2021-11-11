@@ -1,0 +1,90 @@
+body{
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+h1, h2{
+    padding: 0 20px;
+    text-align: center;
+    color: #1A5070;
+    font-family:'Ubuntu', sans-serif;
+}
+h1{
+    font-size: 1.5em;
+}
+h2{
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+p{
+    font-family: 'Dongle', sans-serif;
+    padding: 0 10px;
+    margin: 5px 0;
+}
+.cards{
+     padding: 0px 20px;
+}
+.cards section{
+    border: 1px solid rgb(5, 51, 66);
+    background-color: rgba(26, 80, 112, 25%);
+    margin-bottom: 5px;
+}
+.cards section img{
+    max-width: 60%;
+    margin: 15px 0;
+    box-shadow: 0px 0px 10px 2px grey;
+}
+
+footer{
+    margin: 5px;
+    font-family: 'Dongle', sans-serif;
+    background-color: #000009;
+    color: #fff;
+    padding: 1em;
+}
+
+/*table view*/
+@media only screen and (min-width: 560px) {
+    body{
+        max-width: 700px;
+    }
+    .cards{
+        margin: 0 20px;
+        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 20%);
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        background-color:rgb(77 29 96 / 25%);
+    }
+    h1{
+        font-size: 1.85em;
+        font-weight: 10px;
+    }
+    h2{
+        font-size: 10px;
+        color: #310080;
+    }
+    .cards section{
+        margin: 0px;
+    }
+    
+}
+
+/*desktop view*/
+@media only screen and (min-width: 900px) {
+    body{
+        max-width: 1200px;
+    }
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 20%);
+    }
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+}
