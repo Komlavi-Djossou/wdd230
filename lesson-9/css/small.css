@@ -1,0 +1,252 @@
+:root {
+    --primary: #2A4665;
+    --dark: #685460;
+    --secondary: #FEFCF7;
+    --light-yellow: #FEEAC3;
+}
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    color: var(--dark);
+}
+body {
+    background-color: var(--primary);
+    margin: 30px 50px;
+    line-height: 1.4;
+    border: 1px var(--secondary);
+}
+h1, h2{
+    color: var(--secondary);
+    margin: 10px 5px;
+}
+
+img {
+    max-width: 100%;
+}
+header {
+    font-family: 'Lora', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center; 
+    color: white;
+}
+header img {
+    width: 80px;
+    padding: 10px 10px;
+}
+section h1 {
+    font-size: Bold;
+}
+nav {
+    border-radius: 10px;
+    background-color: var(--light-yellow);
+    font-family: Lora;
+}
+
+nav ul {
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1rem;
+   
+}
+nav ul li:first-child {
+    display: block;
+}
+
+nav ul li {
+    display: none;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
+
+nav ul li:hover{
+    background-color: var(--secondary);
+    transition: 0.9s;
+    color: var(--blue);
+    border-radius: 10px;
+}
+
+/* menu */
+ 
+.active {
+	pointer-events: none;
+} 
+.menu {
+    color: var(--secondary);
+    background-color: var(--primary);
+}    
+.menu:hover{
+    color: var(--secondary);
+    background-color: var(--dark);
+}
+.open::after{
+    content: " Menu";
+}
+.close::after{
+    content: " Close";
+}
+.responsive li {
+	display: block;
+}
+
+main{
+    display: block;
+    margin-bottom: 2rem;
+    background-color: #FEFCF7;
+}
+main h2 {
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.herodiv {
+    text-align: center;
+    position: relative;
+    margin: 10px auto;
+}
+
+.weathersummary {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: radial-gradient(yellow, white);
+    border: 1px solid blue;
+    padding: .5rem;
+}
+
+/* 5 day forecast */
+.forecast {
+    display: block;
+}
+.title {
+    color: var(--secondary);
+}
+
+.box {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+.box h4 {
+    background-color: var(--light-yellow);
+}
+
+/* article */
+.article{
+    margin: 20px 0px;
+}
+.article section{
+    padding: 20px;
+    text-align: center;
+    
+}
+.article section img{
+    margin: 0 auto;
+    box-shadow: 0px 0px 3px 1px #444;
+}
+.article section h4{
+    text-align: left;
+    margin: 10px 0px;
+}
+.article section p{
+    text-align: left;
+    font-size: 1rem;
+    margin: 5px 0px;
+}
+.note{
+    font-size: 1rem;
+    font-style: italic;    
+}
+
+/* map and contact */
+
+.information {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    background-color: #FEFCF7;
+    border: 1px solid yellow;
+}
+
+.information h2{
+    color: black;
+}
+
+.mapicon img {
+    width: 90%;
+    height: 250px;
+}
+.contact {
+    padding-top: 5rem;
+}
+
+.footer {
+    padding-top: 2rem;
+    border-radius: 10px;
+    height: 80px;
+    text-align: center;
+    background-color: var(--light-yellow);
+}
+.footer p {
+    color: var(--dark);
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* gallery */
+.gallery {
+    display: block;
+}
+.gallery-heading {
+    text-align: center;
+}
+
+@media (orientation:portrait){
+    figcaption {
+       display: none; /* visibility: none; */
+    }
+    
+}
+figcaption {
+    text-align: center;
+}
+
+/* ----------------------HOME PAGE --------------------*/
+
+div.cards section {
+    border: 1px solid black;
+    text-align: center;
+    margin: 5px;
+    background-color: hsla(120, 13%, 26%, 0.3);
+}
+section img {
+    max-width: 100%;
+}
+.sketch, .home-heading {
+    text-align: center;
+    color: grey;
+}
+.class {
+    display: inline-block;
+    text-align: center;
+}
