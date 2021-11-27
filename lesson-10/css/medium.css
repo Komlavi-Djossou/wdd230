@@ -20,10 +20,11 @@
 		width: 100%;
 	}
 	.forecast {
-		background-color: black;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-		grid-gap: 10px;
+		background-color: #00000099;
+		display: flow-root;
+	}
+	.forecast-tab {
+		width: 50%;
 	}
 	article{
         border: 1px solid #f58634;

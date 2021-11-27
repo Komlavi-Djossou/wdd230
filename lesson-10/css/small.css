@@ -133,20 +133,37 @@ main h2 {
 
 /* 5 day forecast */
 .forecast {
-    display: block;
-}
-.title {
-    color: var(--secondary);
-}
+    display: none;
+    padding: 10px;
+    background-color: rgb(67, 73, 73);
 
-.box {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
+}
+.forecast-tab {
+    width: 50%;
+    margin: auto;
     text-align: center;
 }
-.box h4 {
-    background-color: var(--light-yellow);
+.forecast-tab, .forecast-tab th, .forecast-tab td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+}
+.forecast-tab td {
+    color: white;
+    width: 20%;
+    height: 8em;
+} 
+.forecast-tab td img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+.forecast-tab th {
+    color: #f2f3e9;
+    padding: 1rem;
+    background-color:#76880066;
+ 
 }
 
 /* article */
