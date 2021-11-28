@@ -5,7 +5,6 @@
     nav ul {
         max-width: 100%;
     }
-
     main {
         margin: 0 auto;
         background-color: #00000099;
@@ -19,11 +18,12 @@
         color: #030;
     }
     .weathersummary {
-        margin-left: 5rem;
+        color: white;
+        margin-left: 10rem;
         width: 30%;
         height: 50%;
         border-radius: 10px;
-        border: 1px solid yellow;
+        border: 1px solid rgb(65, 65, 43);
     }
     .weathersummary p {
         font-size: 1.5rem;
@@ -43,35 +43,9 @@
     }
     .clearfix p {
         font-size: 1.5rem;
-        color: rgb(213, 226, 33);
     }
-    /* gallery */
-    .gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    }
-    .gallery img {
-        padding: 2px 2px;
-        background-color: aliceblue;
-        border-radius: 10px;
-    }
-    .picture {
-        padding: 2px 2px;
-        background-color: aliceblue;
-        border-radius: 10px;
-        border: 1px solid var(--light-yellow);
-    }
-    .gallery img:hover {
-        box-shadow: 0 0 50px #333;
-    }
-    /*-----HOME PAGE --------*/
-    div.cards {
-    display: flex; 
-    }
-    div.cards section {
-    display: block;
-    }
-    .class {
-        display: flex;
+    .article p {
+        color: white;
     }
 }
+

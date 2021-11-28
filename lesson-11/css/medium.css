@@ -15,19 +15,19 @@
 	main {
 		padding: 10px 10px;
         max-width: 100%;
-		background-color: rgb(209, 211, 219);
     }
 	.herodiv {
 		width: 100%;
 	}
 	.forecast {
-		background-color: black;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-		grid-gap: 10px;
+		background-color: #00000099;
+		display: flow-root;
+	}
+	.forecast-tab {
+		width: 50%;
 	}
 	article{
-        border: 1px solid black;
+        border: 1px solid #f58634;
     }
 
     .article section img{
@@ -60,41 +60,5 @@
 	.mapicon img {
 		border-radius: 10px;
 	}
-
-	.gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-	grid-gap: 10px;
-	}
-	/*---HOME PAGE ---------*/
-	div.cards section{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
-	
-	section:nth-child(even) img {
-		grid-column: 2;
-	
-	}
-	section img {
-		height: auto;
-	}
-	section:nth-child(even) article {
-		grid-column: 1;
-		grid-row: 1;
-		justify-self: center;
-		align-self: center;
-		border: none;
-	}
-	section:nth-child(odd) article {
-		justify-self: center;
-		align-self: center;
-		border: none;
-	}
-	.class {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 10px;
-	}
+   
 }
-

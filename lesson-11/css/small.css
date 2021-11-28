@@ -45,7 +45,7 @@ section h1 {
 }
 nav {
     border-radius: 10px;
-    background-color: var(--light-yellow);
+    background-color: whitesmoke;
     font-family: Lora;
 }
 
@@ -107,7 +107,7 @@ nav ul li:hover{
 main{
     display: block;
     margin-bottom: 2rem;
-    background-color: #00000099;
+    background-color: #FEFCF7;
 }
 main h2 {
     text-align: center;
@@ -124,32 +124,46 @@ main h2 {
 .weathersummary {
     position: absolute;
     top: 20px;
-    left: 50px;
+    left: 20px;
     color: white;
     background:  #00000099;
-    border: 1px solid rgb(255, 153, 0);
+    border: 1px solid blue;
     padding: .5rem;
-}
-.weathersummary p{
-    color: white;
 }
 
 /* 5 day forecast */
 .forecast {
-    display: block;
-}
-.title {
-    color: var(--secondary);
-}
+    display: none;
+    padding: 10px;
+    background-color: rgb(67, 73, 73);
 
-.box {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
+}
+.forecast-tab {
+    width: 50%;
+    margin: auto;
     text-align: center;
 }
-.box h4 {
-    background-color: var(--light-yellow);
+.forecast-tab, .forecast-tab th, .forecast-tab td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+}
+.forecast-tab td {
+    color: white;
+    width: 20%;
+    height: 8em;
+} 
+.forecast-tab td img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+.forecast-tab th {
+    color: #f2f3e9;
+    padding: 1rem;
+    background-color:#76880066;
+ 
 }
 
 /* article */
@@ -173,7 +187,6 @@ main h2 {
     text-align: left;
     font-size: 1rem;
     margin: 5px 0px;
-    color: white;
 }
 .note{
     font-size: 1rem;
@@ -207,7 +220,7 @@ main h2 {
     border-radius: 10px;
     height: 80px;
     text-align: center;
-    background-color: var(--light-yellow);
+    background-color: white;
 }
 .footer p {
     color: var(--dark);
@@ -216,118 +229,4 @@ main h2 {
     content: "";
     display: table;
     clear: both;
-}
-
-/* gallery */
-.gallery {
-    display: block;
-}
-.gallery-heading {
-    text-align: center;
-}
-
-@media (orientation:portrait){
-    figcaption {
-       display: none; /* visibility: none; */
-    }
-    
-}
-figcaption {
-    text-align: center;
-}
-
-/* ----------------------HOME PAGE --------------------*/
-
-div.cards section {
-    border: 1px solid black;
-    text-align: center;
-    margin: 5px;
-    background-color: hsla(120, 13%, 26%, 0.3);
-}
-section img {
-    max-width: 100%;
-}
-.sketch, .home-heading {
-    text-align: center;
-    color: grey;
-}
-.class {
-    display: inline-block;
-    text-align: center;
-}
-
-/* --------FORM--------------- */
--- FORM  ----------------- */
-form fieldset {
-    margin: 2rem 0;
-    border: 1px solid #445ba9;
-    border-radius: 10px;
-    padding: .5rem 2%;
-    font-size: 1.5rem;
-}
-form legend{
-    color: #445ba9;
-    margin: 0 1rem;
-    padding: 0 .5rem;
-    display: flex;
-    font-size: 1.5rem;
-}
-form label.top {
-    display: block;
-    padding-top: 1rem;
-    color: #9c2c13;
-    font-size: .8rem;
-}
-form div {
-    padding-left: 1rem;
-    padding-top: 1rem;
-    color: #9c2c13;
-    font-size: .8rem;
-}
-form label.top input, form label.top select {
-    -webkit-appearance: none;
-    display: block;
-    font-size: 1rem;
-    border: solid 1px #999;
-    border-radius: 4px;
-    padding: #555;
-    color: #555;
-    width: 100%;
-    max-width: 20rem;
-    background-color: rgba(0,0,0,0.1);
-}
-
-form label.sbs {
-    display: block;
-    padding: .1rem 0;
-    color: #555;
-    margin-left: 1rem;
-}
-form input.submitBtn {
-    border: none;
-    background-color: #9c2c13;
-    color: white;
-    border-radius: 1rem;
-    padding: .75rem 1.5rem;
-    margin: 1em 0 2rem 2%;
-    width: 96%;
-    max-width: 20rem;
-}
-form label.top input:required {
-    border-left: red solid 6px;
-}
-form label.top input:required:valid {
-    border-left: green solid 6px;
-}
-form label.top, textarea{
-    display: block;
-    width: 70%;
-    padding: .75rem;
-}
-.storm-heading {
-    text-align: center;
-}
-.thank-footer {
-    color: black;
-    padding: 10px 10px;
 }

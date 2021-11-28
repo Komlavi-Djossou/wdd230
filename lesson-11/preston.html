@@ -25,8 +25,8 @@
                 <li><a class="menu" href="#" onclick="openClose()"><span class="open">&#9776;</span></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="preston.html">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
                 <li><a href="stormcenter.html">Storm center</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
@@ -44,7 +44,7 @@
                 <h3>Weather Wummary</h3>
                 <p>Currently: <span id="currently"></span></p>
                 <p>High: <span id="temp"></span> &deg;F</p>
-                <p>Wind Chill: <span id="windchill"></span> &deg;F</p>
+                <p>Wind Chill: <span id="windchill"></span></p>
                 <p>Humidity: <span id="humidity"></span>%</p>
                 <p>Wind Speed: <span id="windspeed"></span>mph</p>
             </section>
@@ -52,36 +52,16 @@
 
         <h2 class="title">5 Day forecast</h2>
         <div class="forecast">
-            <div class="box">
-            <h4>Wed</h4>
-            <img src="images/pic1.png" alt="forecast image">
-            <p>76&deg; F</p>
-            <p>Humidity: 20%</p>
-        </div>
-        <div class="box">
-            <h4>Thu</h4>
-            <img src="images/pic2.png" alt="forecast image">
-            <p>79&deg; F</p>
-            <p>Humidity: 36%</p>
-        </div>
-        <div class="box">
-            <h4>Fri</h4>
-            <img src="images/pic3.png" alt="forecast image">
-            <p>84&deg; F</p>
-            <p>Humidity: 23%</p>
-        </div>
-        <div class="box">
-            <h4>Sat</h4>
-            <img src="images/pic3.png" alt="forecast image">
-            <p>85&deg; F</p>
-            <p>Humidity: 42%</p>
-        </div>
-        <div class="box">
-            <h4>Sun</h4>
-            <img src="images/pic2.png" alt="forecast image">
-            <p>89&deg; F</p>
-            <p>Humidity: 91%</p>
-            </div>
+            <table class="forecast-tab">
+                <tr>
+                  <th><p>Sunday</p><span id="day1"></span></th>
+                  <th><p>Monday</p><span id="day2"></span></th>
+                  <th><p>Tuesday</p><span id="day3"></span></th>
+                  <th><p>Wednesday</p><span id="day4"></span></th>
+                  <th><p>Thursday</P><span id="day5"></span></th>
+                </tr>
+                <tr class="forecast-td"></tr>
+              </table>
     </div>
         <div class="article">
             <section class="clearfix">
@@ -119,6 +99,7 @@
      </div>
     </footer>
     <script src="js/preston.js"></script> 
-    <script src="js/weatherapi2.js"></script>
+    <script src="js/forecast.js"></script>
+    <script src="windchill.js"></script>
 </body>
 </html>
