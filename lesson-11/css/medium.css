@@ -60,5 +60,47 @@
 	.mapicon img {
 		border-radius: 10px;
 	}
-   
+	
+	.gallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+		}
+		/*---HOME PAGE ---------*/
+		div.cards section{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+		
+		section:nth-child(even) img {
+			grid-column: 2;
+		
+		}
+		section img {
+			height: auto;
+		}
+		section:nth-child(even) article {
+			grid-column: 1;
+			grid-row: 1;
+			justify-self: center;
+			align-self: center;
+			border: none;
+		}
+		section:nth-child(odd) article {
+			justify-self: center;
+			align-self: center;
+			border: none;
+		}
+		.class {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 10px;
+		}
+		/* .soda-forecast {
+            width: 100%;
+        } */
+		.soda-forecast {
+			display: none;
+		} 
+		
 }

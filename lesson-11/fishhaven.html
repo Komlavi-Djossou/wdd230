@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/weather logo.png" alt="site logo"></a>
+        <section>
+            <h1>Check Weather</h1>
+            <p>No move without checking the weather!<p>
+            <button onclick="togglePopup()">Click here</button>
+        </section>
+    </header>
+        <nav>
+            <ul class="nonResponsive">
+                <li><a class="menu" href="#" onclick="openClose()"><span class="open">&#9776;</span></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    <main class="clearfix">
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Like us?</h1>
+            <p>Become a Member </p>
+            </div>
+        </div>
+        <h2>Fish Haven</h2>
+        <div class="herodiv">
+            <picture>
+                <source media="(max-width: 390px)" srcset="images/fish-small.jpg">
+                <source media="(max-width: 500px)" srcset="images/fish-medium.jpg">
+                <source media="(min-width: 900px)" srcset="images/fish-large.jpg ">
+                <img src="images/fish-large.jpg" alt="Preston Hero Image">
+            </picture>
+            <section class="weathersummary">
+                <h3>Weather Wummary</h3>
+                <p>Currently: Rainy</p>
+                <p>High: 95°F</p>
+                <p>Wind Chill: 54°F</p>
+                <p>Humidity: 100%</p>
+                <p>Wind Speed: 25mgh</p>
+            </section>
+        </div>
+
+        <h2 class="title">5 Day forecast</h2>
+        <div class="soda-forecast">
+            <div class="box">
+                <h1>Sunday</h1>
+                <img src="images/cloud2.png" alt="forecast image">
+                <p>76&deg;F</p>
+            </div>
+            <div class="box">
+                <h1>Monday</h1>
+                <img src="images/cloud3.png" alt="forecast image">
+                <p>79&deg;F</p>
+            </div>
+            <div class="box">
+                <h1>Tuesday</h1>
+                <img src="images/cloud2.png" alt="forecast image">
+                <p>84&deg; F</p>
+            </div>
+            <div class="box">
+                <h1>Wednesday</h1>
+                <img src="images/cloud3.png" alt="forecast image">
+                <p>85&deg;F</p>
+            </div>
+            <div class="box">
+                <h1>Thursday</h1>
+                <img src="images/cloud2.png" alt="forecast image">
+                <p>89&deg;F</p>
+                </div>
+    </div>
+    <section class="event">
+        <h1>Upcoming Events!</h1>
+        <p>December 25: Weather Party</p>
+        <p>February 26: President Djossou's Talk</p>
+    </section>
+        <div class="article">
+            <section class="clearfix">
+            <img src="images/fish.jpg" alt="fish image">  
+            <P class="note">Reading edifies the mind.</p><br>
+            <p> Natural Hazards! <br>
+                
+                Natural hazards are severe and extreme weather and climate events. 
+                Although they occur in all parts of the world, some regions are more 
+                vulnerable to certain hazards than others. Natural hazards become disasters
+                 when people’s lives and livelihoods are destroyed.                                                               Natural hazards occur across different time and area scales and each is in some way unique. Tornadoes and flash floods are short-lived, violent events, affecting a relatively small area. Others, such as droughts, develop slowly, but can affect most of a continent and entire countries for months or even years. An extreme weather event can involve multiple hazards at the same time or in quick succession. In addition to high winds and heavy rain, a tropical storm can result in flooding and mudslides. In temperate latitudes, severe thunderstorms can be accompanied by a combination of large, damaging hail stones, tornadoes, strong winds or heavy rain resulting in flash floods. Winter storms with high winds and heavy snow or freezing rain can also contribute 
+                to avalanches on some mountain slopes and to high runoff or
+                 flooding later on in the melt season.
+            </p>
+        </section>  
+        </div>   
+    </main>
+
+    
+    <footer>
+        <div class="information">
+            <div class="mapicon">
+            <img src="images/map.png" alt="#">
+            </div>
+            <div class="contact">
+                <h2>Contact Information</h2> 
+                <p>&#10082; Preston, ID 83263</p>
+                <p>&#9742; 909 909 909</p>
+                <p>&#9993; checkweather.net</p>
+                <img src="images/fcbk.jpeg" height="50px"alt="#">
+                <img src="images/pintrest.jpeg" height="50px" alt="#">
+                <img src="images/twitter.jpeg" height="50px" alt="#">
+                <img src="images/whatsapp.jpeg" height="50px" alt="#">
+            </div>
+        </div>
+        <div class="footer">
+        <p>&copy; 2021 | Komlavi W. A. Djossou | Togo | <a href="#">BYU Online Learning</a></p>
+        <p class="end-paragraph">Last Updated: <span id="currentdate"></span></p>
+     </div>
+    </footer>
+    <script src="js/preston.js"></script> 
+    <script src="js/forecast.js"></script>
+    <script src="windchill.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>
