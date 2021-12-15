@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/kcclogo.jpeg" alt="site logo">
+        <section>
+            <h1>Komlavi Chamber of Commerce</h1>
+        </section>
+    </header>
+        <nav>
+            <ul class="nonResponsive">
+                <li><a class="menu" href="#" onclick="openClose()"><span class="open">&#9776;</span></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="lome.html">Lome</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    <main>
+        
+         <header>
+            <h1>Business Places</h1>
+          </header>
+          <button class="btn-view" id="list-view">list</button>
+          <button style= "display:none;" id="grid-view" class="btn-view" >grid</button>
+            <div id="card-view" class="cards">
+            </div>
+       
+    </main>
+    <footer>
+        <div class="logo">
+            <img src="images/kcclogo.jpeg" alt="">
+            <p>Komlavi Chamber of Commerce</p>
+        </div>
+        <div class="info">
+            <p>Contact Information <br>
+            kcc@gmail.com <br>
+            +22891563448  <br>
+        Rue de l'Authenticite, Lome-Togo</p>
+        <p>&copy; 2021 | Komlavi Chamber of Commerce | Togo</a></p>
+        <p class="end-paragraph">Last Updated: <span id="currentdate"></span></p>
+     </div>
+     <div class="social">
+         <img src="images/whatsapplogo.png" alt="">
+         <img src="images/fcbklogo.png" alt="">
+         <img src="images/linkednlogo.png" alt="">
+         <img src="images/twitterlogo.jpg" alt="">
+     </div>
+    </footer>
+    <script src="js/currentdate.js"></script> 
+    <script src="js/business.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/ok.js"></script>
+</body>
+</html> 

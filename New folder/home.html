@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/kcclogo.jpeg" alt="site logo">
+        <section class="header-title">
+            <h1>Komlavi Chamber of Commerce</h1>
+            <button onclick="togglePopup()">Alert from the government</button>
+        </section>
+    </header>
+    <main>
+        <nav>
+            <ul class="nonResponsive">
+                <li><a class="menu" href="#" onclick="openClose()"><span class="open">&#9776;</span></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="lome.html">Lome</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                <h1>Watch out</h1>
+                <p>The city is not safe</p>
+                </div>
+                <section id="newsletter">
+                    <button>Join Our News Letter</button>
+                    <input type="text" placeholder="ENTER YOUR EMAIL">
+                    <button>Sign Up</button>
+                 </section>
+                 <!-- Top Container -->
+            <section class="top-container">
+                <div class="showcase">
+                    <picture>
+                <source media="(max-width: 500px)" srcset="images/homesmall.jpg">
+                <source media="(max-width: 900px)" srcset="images/homemedium.jpg">
+                <source media="(min-width: 1200px)" srcset="images/homelarge.jpg ">
+                <img src="images/homelarge.jpg" alt="Home Image">
+            </picture>
+                    <h1>Komlavi Chamber of Commerce </h1>
+                    <P>at Lome, TOGO</P>
+                    <p>Welcome here, browse more to learn about us</p>
+                <a href="join.html" class="btn">Join Us</a>
+                    </div>
+                <div class="top-box top-box-a">
+                    <h3>Weather Summary</h3>
+                    <p>Currently: <span id="currently"></span></p>
+                    <p>temperature: <span id="temp"></span> &deg;F</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                 </div>
+
+                <div class="top-box top-box-b">
+                    <h3>Upcoming Events</h3>
+                    <p>December 25: Chrismas</p>
+                    <p>July 30: ECOWAS & ECCAS summit</p>
+                    <p>February 2: Business Council</p>
+                </div>
+            </section>
+            <h2 class="title">3 Day forecast</h2>
+        <div class="home-forecast">
+            <div class="box">
+                <h1>Sunday</h1>
+                <img src="images/cloud2.png" alt="forecast image">
+                <p>76&deg;F</p>
+            </div>
+            <div class="box">
+                <h1>Monday</h1>
+                <img src="images/cloud3.png" alt="forecast image">
+                <p>79&deg;F</p>
+            </div>
+            <div class="box">
+                <h1>Tuesday</h1>
+                <img src="images/cloud2.png" alt="forecast image">
+                <p>84&deg; F</p>
+            </div>
+    </div>
+            <div class="box-container">
+                <!-- --1--- -->
+                <div class="box-1">
+                <span>1</span>
+                <p class="heading">TOGOCOM</p>
+                <p class="details">A company of network in Lome, Togo. Transfert of Money, 
+                    purchase of credit, Internet bunble. Purchase of matrials of high quality
+                </p>
+                <button><a href="https://togocom.tg/">Read More</a></button>
+            </div>
+                    <!-- --2--- -->
+                <div class="box-2">
+                    <span>2</span>
+                <p class="heading">HAOJUE</p>
+                <p class="details">A motorcycle and vehicle sales company.
+                     Sale of equipment,
+                     customer service, after-sales service. 
+                    Advice and guidance</p>
+                    <button> <a href="https://en.haojue.com/">Read More</a></button>
+            </div>
+                <!-- --3--- -->
+                <div class="box-3">
+                    <span>3</span>
+                <p class="heading">CIMTOGO</p>
+                <p class="details">Togolese company belonging to the multinational 
+                    HeidelbergCement group specializing in the production of cement,
+                     Cimtogo and in the production and marketing of cement. With a 
+                     production capacity of 1 million Tons.</p>
+                <button> <a href="https://www.goafricaonline.com/">Read More</a></button>
+            </div>
+    </div>
+    <section class="municipalities">
+        <div class="munic">
+            <img src="images/muni3.jpg" alt="">
+            <p>Amoutive, Lome</p>
+        </div>
+        <div class="munic">
+            <img src="images/muni2.jpg" alt="">
+            <p>Hotel de la paix, Lome</p>
+        </div>
+        <div class="munic">
+            <img src="images/muni1.jpg" alt="">
+            <p>Deckon, Lome</p>
+        </div>
+    </section>
+   
+     
+        <section class="home-text">
+            <h3>About Us</h3>
+            <p>The purpose of the Komlavi chamber of commerce is to Support, inform and advise companies 
+                at all stages of their development. More broadly, our website contribute tremendously
+                to the development of the economy of the land of Togo through a vast action plan.Hee
+                we observe and analyze the needs of businesses and regions, produce information and
+                economic opinions, we also help build the best possible environment for business development and 
+                support them in their search for competitiveness.
+                If you are entrepreneurs who have been running successfully or unsuccessfully your companies in Togo for years
+                and for a while, please you can joins us. We help also new companies that are emerging, and
+                especially have difficulties to find the support to stand firm. For foreign investors
+               who are willing
+                to implement their business in Lomé but don’t know how to go, we assist them to do that. </p>
+</section>
+
+        </main>
+        <footer>
+            <div class="logo">
+                <img src="images/kcclogo.jpeg" alt="">
+                <p>Komlavi Chamber of Commerce</p>
+            </div>
+            <div class="info">
+                <p>Contact Information <br>
+                kcc@gmail.com <br>
+                +22891563448  <br>
+            Rue de l'Authenticite, Lome-Togo</p>
+            <p>&copy; 2021 | Komlavi Chamber of Commerce | Togo</a></p>
+            <p class="end-paragraph"><span id="currentdate"></span></p>
+         </div>
+         <div class="social">
+             <img src="images/whatsapplogo.png" alt="">
+             <img src="images/fcbklogo.png" alt="">
+             <img src="images/linkednlogo.png" alt="">
+             <img src="images/twitterlogo.jpg" alt="">
+         </div>
+        </footer>
+        <script src="js/currentdate.js"></script> 
+        <script src="js/menu.js"></script>
+        <script src="js/popup.js"></script>
+        <script src="js/weather.js"></script>
+    </body>
+    </html> 

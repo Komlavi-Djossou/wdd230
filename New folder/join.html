@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/kcclogo.jpeg" alt="site logo">
+        <section>
+            <h1>Komlavi Chamber of Commerce</h1>
+        </section>
+    </header>
+        <nav>
+            <ul class="nonResponsive">
+                <li><a class="menu" href="#" onclick="openClose()"><span class="open">&#9776;</span></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="lome.html">Lome</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+    <h1 class="storm-heading">JOIN US</h1>
+    <section id="storm-form">
+    <form methods="get" action="thanks.html">
+        <fieldset>
+            <legend>Fill out the form to join us</legend>
+        
+            <label class="top">First Name* <input type="text" name="fname" placeholder="Your first name" required></label>
+            <label class="top">Last Name* <input type="text" name="lname" placeholder="Your last name" required></label>
+            <label class="top">Title* <input type="text" name="title" placeholder="Your title" required></label>
+            <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="top">Phone*<input type="tel" name="phone" placeholder="12345678" required></label>
+            <label class="top">Business Name* <input type="text" placeholder="Your business name" required></label>
+            <label class="top">Business Website* <input type="text" name="bwebsite" placeholder="www.someone.net" required></label>
+        </fieldset>
+
+        <fieldset>
+            <label class="top">Storm Date<input type="date" name="stormDate"></label>
+            
+                    <label class="top">Business Address: 
+                    <select name="area" class="area">
+                        <option value="selectRegion" selected="true" disabled="disabled">Select Area </option>
+                        <option value="fishHaven">Amoutive</option>
+                        <option value="preston">Hotel de la paix</option>
+                        <option value="sodaSprings">Deckon</option>
+                    </select>
+                </label>
+        <div>Membership level</div>                
+        <label class="sbs"><input type="radio" name="membership" value="nonprofit">Non-profit($100)</label>
+        <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze($200)</label>
+        <label class="sbs"><input type="radio" name="membership" value="silver">Silver($400)</label>
+        <label class="sbs"><input type="radio" name="membership" value="gold">Gold($1000)</label>
+        </fieldset>
+        <section class="subscription">
+            <div class="class">
+                <h1>Non-profit($100)</h1>
+                <p>For This susbscription, you will be assited by directors to develop
+                    business plan. It is renewable every month
+                </p>
+            </div>
+            <div class="class">
+                <h1>Bronze($200)</h1>
+                <p>For This susbscription, you will be assited by directors to develop
+                    business plan. You will access to training session with no amount to pay.
+                     It is renewable every three months.
+                </p>
+            </div>
+            <div class="class">
+                <h1>Silver($400)</h1>
+                <p>For This susbscription, you will be assited by directors to develop
+                    business plan. You will access to training session with no amount to pay.
+                    Also, directors offer 50% of discount of counselling, assistance and succesful 
+                    project. It is renewable every six months.
+                </p>
+            </div>
+            <div class="class">
+                <h1>Gold($1000)</h1>
+                <p>For This susbscription, you will be assited by directors to develop
+                    business plan. You will access to training session with no amount to pay.
+                    Also, directors offer 80% of discount of counselling, assistance and succesful 
+                    project. You will be sponsored by directors to set up a new company
+                    based on th business plan that you have. It is renewable every every year.
+                </p>
+            </div>
+            
+            
+            
+        </section>
+
+        <fieldset>
+            <legend>More Infos</legend>
+            <label class="top">Describe your business<textarea class="comment" name="comment" placeholder="Tell us what you do..."></textarea></label>
+        </fieldset>
+
+        <input type="submit" value="Join Us" class="submitBtn">
+    </section> 
+</main>
+<footer>
+    <div class="logo">
+        <img src="images/kcclogo.jpeg" alt="">
+        <p>Komlavi Chamber of Commerce</p>
+    </div>
+    <div class="info">
+        <p>Contact Information <br>
+        kcc@gmail.com <br>
+        +22891563448  <br>
+    Rue de l'Authenticite, Lome-Togo</p>
+    <p>&copy; 2021 | Komlavi Chamber of Commerce | Togo</a></p>
+    <p class="end-paragraph">Last Updated: <span id="currentdate"></span></p>
+ </div>
+ <div class="social">
+     <img src="images/whatsapplogo.png" alt="">
+     <img src="images/fcbklogo.png" alt="">
+     <img src="images/linkednlogo.png" alt="">
+     <img src="images/twitterlogo.jpg" alt="">
+ </div>
+</footer>
+<script src="js/currentdate.js"></script>
+<script src="js/menu.js"></script> 
+</body>
+</html>

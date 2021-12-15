@@ -1,13 +1,10 @@
-/* CSS Variable */
 :root {
-    --primary: #FFFFFF;
-    --dark: #505050;
-    --black: #000000;
-    --light: #f6f5f5;
-    --grey: #6d6d6d;
-    --shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    --primary: #777777;
+    --secondary: #e30043;
+    --accent: #5a5a5a;
+    --blue: #337ab7;
+    --dark: #333333;
 }
- 
 *, *::after, *::before{
     margin: 0;
     padding: 0;
@@ -18,14 +15,12 @@ html{
     color: var(--dark);
 }
 body {
-    background-color: var(--primary);
-    margin: 30px 50px;
+    margin: 10px 10px;
     line-height: 1.4;
-    border: 1px var(--secondary);
+    border: 1px solid var(--secondary);
 }
 h1, h2{
-    color: var(--dark);
-    margin: 10px 5px;
+    color: var(--secondary);
 }
 
 img {
@@ -41,13 +36,10 @@ header {
     color: white;
 }
 header img {
-    width: 150px;
+    width: 20%;
     padding: 10px 10px;
-    margin-right: 20rem;
-    border-radius: 10px;
-    height: 150px;
 }
-section h1 {
+.header-title h1 {
     font-size: Bold;
 }
 nav {
@@ -94,11 +86,11 @@ nav ul li:hover{
 	pointer-events: none;
 } 
 .menu {
-    color: var(--secondary);
+    color: white;
     background-color: var(--primary);
 }    
 .menu:hover{
-    color: var(--secondary);
+    color: white;
     background-color: var(--dark);
 }
 .open::after{
@@ -116,17 +108,11 @@ main{
     margin-bottom: 2rem;
     background-color: #FEFCF7;
 }
-main h2 {
+/* main h2 {
     text-align: center;
     align-items: center;
     color: white;
-}
-
-.herodiv {
-    text-align: center;
-    position: relative;
-    margin: 10px auto;
-}
+} */
 
 .weathersummary {
     position: absolute;
@@ -256,7 +242,6 @@ figcaption {
 }
 
 /* --------FORM--------------- */
--- FORM  ----------------- */
 
 form fieldset {
     margin: 2rem 0;
@@ -328,18 +313,120 @@ form label.top, textarea{
     text-align: center;
 }
 .thank-footer {
-    color: black;
+    color: #f5e9e9;
     padding: 10px 10px;
 }
 
 
-/* ----------------------HOME PAGE --------------------*/
-
-div.cards section {
+/* ------------SODA SPRINGS------------- */
+.soda-forecast {
+    display: none;
+} 
+.home-text {
+    line-height: 1rem;
+    border: 1px solid black;
+    padding: 10px 10px;
+}
+/* ------CONTACT PAGE------------  */
+.contact-page {
+    display: block;
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+}
+.contact-page-social{
+    margin: 0.5rem;
+    background-color: #ce6685;
+    width: 100%;
+}
+.contact-page-social p {
+    padding: 5px;
+}
+.contact-page-social img {
+    margin-top: 1rem;
+    padding: 1em;
+    width: 10%;
+}
+iframe {
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+    box-sizing: border-box;
+    border: 1px solid #3FD59D;  
+}
+.form {
+    margin: 1em auto;
+    padding: 2em 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    color:  white;
+    background-color: var(--blue);
+  }
+  
+.form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.form li + li {
+    margin-top: 1em;
+}
+  
+.form label {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+}
+.form input{
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+  
+.form 
+  textarea {
+    font: 1em sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #e30043;
+}
+  
+.form input:focus,
+    textarea:focus {
+    border-color: #000;
+}
+  
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+  
+.button {
+    padding-left: 90px;
+}
+  
+.form button {
+    margin-left: 0.5em;
+  }
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5em;
+    display: none;
+}
+/* directories---------------- */
+div.cards section,  div.cards-list section {
     border: 1px solid black;
     text-align: center;
     margin: 5px;
     background-color: hsla(120, 13%, 26%, 0.3);
+}
+.btn-view {
+    width: 30%;
+    border: 1px solid black;
 }
 section img {
     max-width: 100%;
@@ -352,12 +439,105 @@ section img {
     display: inline-block;
     text-align: center;
 }
-/* ------------SODA SPRINGS------------- */
-.soda-forecast {
-    display: none;
-} 
-.home-text {
-    line-height: 1rem;
-    border: 1px solid black;
-    padding: 10px 10px;
+/* -------FOOTER----- */
+footer {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 1em;
 }
+.social img{
+    width: 20%;
+}
+/* --------index------- */
+.top-container {
+    display:block;
+    line-height: 1rem;
+    border: 1px solid var(--secondary);
+    text-align: center;
+    padding: 1em;
+}
+.showcase{
+    padding: 10px 10px;
+    display: inline-block;
+    border: 1px solid var(--blue);
+}
+.showcase p{
+    color: #333333;
+}
+.top-box{
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid var(--blue);
+    width: 50%;
+    /* background-color: #00000099; */
+}
+
+/* ---news---- */
+#newsletter {
+    margin: 10px 10px;
+    text-align: center;
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
+.box-container {
+    display: inline-block;
+    justify-content: space-between;
+}
+.box-1,.box-2,.box-3{ 
+    height: 320px;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    box-shadow: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px 10px;
+}
+.box-1{
+    /* background-image:url("mydark.jpg") ; */
+    background-color: var(--secondary);
+}
+.box-2{
+    /* background-image:url("mydark.jpg") ; */
+    background-color: rgb(131, 131, 179)
+}
+.box-3{
+    /* background-image:url("mydark.jpg") ; */
+    background-color: rgb(241, 222, 222)
+
+}
+.municipalities{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 1rem;
+    padding: 10px 10px;
+    background-color: var(--blue);
+}
+.munic {
+    background-color: #FFFFFF;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: rgb(202, 110, 110);
+    
+}
+.munic p{
+    color: #222;
+}
+
+.subscription {
+    display: block;
+    padding: 10px;
+    justify-content: center;
+}
+ .home-forecast {
+     display: none;
+ }
+ .lome-city {
+     padding: 20px;
+ }

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/kcclogo.jpeg" alt="site logo">
+        <section>
+            <h1>Komlavi Chamber of Commerce</h1>
+        </section>
+    </header>
+        <nav>
+            <ul class="nonResponsive">
+                <li><a class="menu" href="#" onclick="openClose()"><span class="open">&#9776;</span></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="lome.html">Lome</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    <main>
+        <section class="contact">
+            <div class="contact-heading">
+                <h2>GET IN TOUCH</h2>
+                <h3>Hey! We are looking foward to start a project with you!</h3>
+                <p>If you have a project that you'd like to start <br>
+                We have experts that know how to sustain you from the beginning till <br>
+               the projects come true</p>
+            </div>
+             <div class="contact-page">
+            <div class="contact-page-social">
+                <img src="images/whatsapplogo.png" alt="">
+                <img src="images/fcbklogo.png" alt="">
+                <img src="images/linkednlogo.png" alt="">
+                <img src="images/twitterlogo.jpg" alt="">
+                <p>&#10082; Lome, TG 2043</p>
+                <p>&#9742; +22891563448 </p>
+                <p>&#9993; www.kcc.net</p>
+            </div>
+
+        <div class="frame">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d369541.9662590301!2d1.0802946416072114!3d6.175149105139865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023e1c113185419%3A0x3224b5422caf411d!2zTG9tw6k!5e0!3m2!1sen!2stg!4v1639427190271!5m2!1sen!2stg" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+         </div> 
+    </section>
+        <section class="form">
+            <form action="/my-handling-form-page" method="post">
+              <ul>
+                <li>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                  <label for="mail">E-mail:</label>
+                  <input type="email" id="mail" name="user_email" />
+                </li>
+                <li>
+                  <label for="msg">Message:</label>
+                  <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                  <button type="submit">Send your message</button>
+                </li>
+              </ul>
+            </form>
+        </section>
+        <section class="directors">
+                <h3>List of Directors</h3>
+                <div class="list">
+                 <picture>
+                    <source media="(max-width: 500px)" srcset="images/dir2small.jpg">
+                    <source media="(max-width: 900px)" srcset="images/dir2small.jpg">
+                    <source media="(min-width: 1200px)" srcset="images/dir2small.jpg ">
+                    <img src="images/dir2small.jpg" alt="director Image">
+                    <p>Ann Lora, Business Director</p>
+                 </picture>
+                 <picture>
+                    <source media="(max-width: 500px)" srcset="images/der1small.jpg">
+                    <source media="(max-width: 900px)" srcset="images/der1small.jpg">
+                    <source media="(min-width: 1200px)" srcset="images/der1small.jpg ">
+                    <img src="images/der1small.jpg" alt="director Image">
+                    <p>Reine Amlov, Secretary of the Director</p>
+                 </picture>
+                 
+                 <picture>
+                    <source media="(max-width: 500px)" srcset="images/dir3.jpg">
+                    <source media="(max-width: 900px)" srcset="images/dir3.jpg">
+                    <source media="(min-width: 1200px)" srcset="images/dir3.jpg ">
+                    <img src="images/dir3.jpg" alt="director Image">
+                    <p>Clare John, Managemnt Director</p>
+                    <p></p>
+                 </picture>
+                 <picture>
+                    <source media="(max-width: 500px)" srcset="images/dir4.jpg">
+                    <source media="(max-width: 900px)" srcset="images/dir4.jpg">
+                    <source media="(min-width: 1200px)" srcset="images/dir4.jpg ">
+                    <img src="images/dir4.jpg" alt="director Image">
+                    <p>Armande Selenav, Assistant Director</p>
+                 </picture>
+                </div>
+        </section>
+       
+    </main>
+    <footer>
+        <div class="logo">
+            <img src="images/kcclogo.jpeg" alt="">
+            <p>Komlavi Chamber of Commerce</p>
+        </div>
+        <div class="info">
+            <p>Contact Information <br>
+            kcc@gmail.com <br>
+            +22891563448  <br>
+        Rue de l'Authenticite, Lome-Togo</p>
+        <p>&copy; 2021 | Komlavi Chamber of Commerce | Togo</a></p>
+        <p class="end-paragraph">Last Updated: <span id="currentdate"></span></p>
+     </div>
+     <div class="social">
+         <img src="images/whatsapplogo.png" alt="">
+         <img src="images/fcbklogo.png" alt="">
+         <img src="images/linkednlogo.png" alt="">
+         <img src="images/twitterlogo.jpg" alt="">
+     </div>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/popup.js"></script> 
+</body>
+</html>

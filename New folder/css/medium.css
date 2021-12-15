@@ -1,0 +1,226 @@
+@media screen and (min-width: 900px){
+	header img {
+		width: 120px;
+	}
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		display: block;
+		flex: 1 1 auto;
+	}
+	nav ul li:first-child {
+		display: none;
+	}
+	main {
+		padding: 10px 10px;
+        max-width: 100%;
+    }
+	.herodiv {
+		width: 100%;
+	}
+	.forecast {
+		background-color: #00000099;
+		display: flow-root;
+	}
+	.forecast-tab {
+		width: 50%;
+	}
+	article{
+        border: 1px solid #f58634;
+    }
+
+    .article section img{
+        float: right;
+        max-width: 55%;
+        margin-top: 5px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        
+    }
+    .article section h4{
+        font-size: 1.3rem;
+        margin: 0px 0px 10px 0px;
+    }
+    
+    .article section p{
+        
+        font-size: 1.05rem;
+        
+    }
+	.information {
+		justify-content: center;
+		align-items: center;
+		display: grid;
+    	grid-template-columns: 1fr 1fr;
+		width: 95%;
+		margin: 10px 10px;
+		padding-left: 10px ;
+	}
+	.mapicon img {
+		border-radius: 10px;
+	}
+	
+	.gallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+		}
+		/* ---Directory --------- */
+		div.cards {
+			display: grid;
+			grid-template-columns:1fr 1fr 1fr;
+		} 
+		div.cards-list {
+			display: list-item;
+			margin-left: 2rem;
+			list-style: none;
+		}
+/* 		
+		section:nth-child(even) article {
+			grid-column: 1;
+			grid-row: 1;
+			justify-self: center;
+			align-self: center;
+			border: none;
+		}
+		section:nth-child(odd) article {
+			justify-self: center;
+			align-self: center;
+			border: none;
+		}
+		.class {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 10px;
+		}
+		.soda-forecast {
+            width: 100%;
+        } 
+		.soda-forecast {
+			display: none;
+		} 
+		/* ---------directors- */
+		.list {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 1rem;
+		}
+		/* ---MAP--- */
+		iframe {
+			width: 100%;
+			border-radius: 5px 0 0 5px;
+			/* box-sizing: border-box; */
+			border: 1px solid #3FD59D;  
+		}
+		/* ----CONTACT---- */
+		.contact {
+			width: 100%;
+		}
+		.contact-page {
+			display: grid;
+			grid-template-columns: 1fr 60%;
+			grid-gap: 1em;
+			/* background-color: var(#d68181); */
+		}
+		/* -----contact form---- */
+		.form {
+			width: 70%;
+			margin: 1em auto;
+			padding: 2em 1em;
+			border: 1px solid #ccc;
+			border-radius: 1em;
+			color: white;
+			background-color: var(--primary);
+			text-align:center;
+		  }
+		.logo img {
+			width: 50%;
+		}
+		.top-container {
+			display:grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 10px;
+			line-height: 1rem;
+			border: 1px solid var(--secondary);
+			text-align: center;
+			padding: 1em;
+		}
+		.showcase{
+			padding: 10px 10px;
+			grid-column: 1/3 ;
+			border: 1px solid var(--blue);
+		}
+		.top-box{
+			margin-left: 3rem;
+			padding: 10px 10px;
+			border: 1px solid var(--blue);
+			width: 50%;
+		}
+		/* .----box--- */
+		.box-container {
+			display: flex;
+			justify-content: space-between;
+		}
+		.box-1,.box-2,.box-3{ 
+			width: 300px;
+			height: 320px;
+			background-repeat: no-repeat ;
+			background-size: cover;
+			box-shadow: var(--blue);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			margin: 25px 10px;
+		
+		}
+		.box-1{
+			/* background-image:url("mydark.jpg") ; */
+			background-color: var(--secondary);
+		}
+		.box-2{
+			/* background-image:url("mydark.jpg") ; */
+			background-color: rgb(131, 131, 179)
+		}
+		.box-3{
+			/* background-image:url("mydark.jpg") ; */
+			background-color: rgb(92, 79, 79)
+		
+		}
+		.box-1 span,
+		.box-2 span,
+		.box-3 span{
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-color: var(--blue);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: bold;
+		}
+		.box-1 p:nth-child(3),
+		.box-2 p:nth-child(3),
+		.box-3 p:nth-child(3){
+			text-align: center;
+			padding: 10px;
+			margin: 10px 0px 20px 0px;
+			color: #ecd8d8e8;
+		}
+		.box-1 button,
+		.box-2 button,
+		.box-3 button{
+			width: 100px;
+			height: 30px;
+			background-color: #FFFFFF;
+			border: none;
+			outline: none;
+			border-radius: 5px;
+		
+		}
+		.municipalities {
+			display: none;
+		}
+		
+}
